@@ -638,6 +638,52 @@ footer p{
 .contact-location {
     margin-top: 25px;
 }
+    /* Customer Reviews */
+.reviews {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.reviews-grid {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    padding: 30px 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stars {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.review-card p {
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.review-card h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.review-card span {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
 
@@ -810,6 +856,48 @@ Philomena Opoku
                 <p>055 153 1484</p>
             </div>
         </div>
+    </div>
+</section>
+    <!-- Customer Reviews Section -->
+<section class="reviews" id="reviews">
+    <div class="section-title">
+        <span>CLIENT FEEDBACK</span>
+        <h2>What Our Customers Say</h2>
+        <p>
+            We value every customer and strive to provide excellent
+            beauty and decoration services.
+        </p>
+    </div>
+
+    <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                “Your review will appear here.”
+            </p>
+            <h4>Customer Name</h4>
+            <span>Client</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                “Your review will appear here.”
+            </p>
+            <h4>Customer Name</h4>
+            <span>Client</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                “Your review will appear here.”
+            </p>
+            <h4>Customer Name</h4>
+            <span>Client</span>
+        </div>
+
     </div>
 </section>
 
